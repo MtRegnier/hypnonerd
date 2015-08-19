@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "BNRHypnosisViewController.h"
+#import "BNRReminderViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +20,28 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    // This will apparently give me a warning, cool
+    BNRHypnosisViewController *hvc = [[BNRHypnosisViewController  alloc] init];
+    
+    // Fucking the code to see what happens with a nil send
+    // Get a pointer to an object that represents the app bundle
+//    NSBundle *appBundle = [NSBundle mainBundle];
+    
+    // Checking in the app bundle for our XIB
+//    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
+    
+    // Setting up the Tab Bar Controller
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[hvc, rvc];
+    
+    
+    // Changing root view controller. First to rvc, now to the tab bar
+//    self.window.rootViewController = hvc;
+//    self.window.rootViewController = rvc;
+    self.window.rootViewController = tabBarController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

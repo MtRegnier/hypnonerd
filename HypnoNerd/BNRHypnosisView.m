@@ -72,7 +72,7 @@
     [self.circleColor setStroke];
     
     // Adding in the image
-    UIImage *logoImage = [UIImage imageNamed:@"BNRLogo.png"];
+//    UIImage *logoImage = [UIImage imageNamed:@"BNRLogo.png"];
     
     // DRAW!
     [path stroke];
@@ -82,7 +82,7 @@
     // Making points for the clipping path and gradient
     CGPoint gradientEnd = CGPointMake(imageBounds.origin.x + 88.0, imageBounds.origin.y);
     
-    CGPoint gradientStart = CGPointMake(imageBounds.origin.x + 88.0, (imageBounds.origin.y + imageBounds.size.height));
+//    CGPoint gradientStart = CGPointMake(imageBounds.origin.x + 88.0, (imageBounds.origin.y + imageBounds.size.height));
     
     CGPoint clipPointOne = CGPointMake(imageBounds.origin.x, imageBounds.origin.y + 231.0);
     
@@ -104,7 +104,7 @@
     CGContextSaveGState(currentContext);
     
     [clippingPath addClip];
-    CGContextDrawLinearGradient(currentContext, gradient, gradientStart, gradientEnd, 0);
+//    CGContextDrawLinearGradient(currentContext, gradient, gradientStart, gradientEnd, 0);
     
     CGContextRestoreGState(currentContext);
     
@@ -114,7 +114,7 @@
     CGContextSaveGState(currentContext);
     CGContextSetShadow(currentContext, CGSizeMake(4, 7), 3);
     // Drawing the image on top (hopfully)
-    [logoImage drawInRect:imageBounds];
+//    [logoImage drawInRect:imageBounds];
     CGContextRestoreGState(currentContext);
 }
 
