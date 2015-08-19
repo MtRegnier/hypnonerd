@@ -8,11 +8,11 @@
 
 #import "BNRHypnosisView.h"
 
-@interface BNRHypnosisView ()
-
-@property (strong, nonatomic) UIColor *circleColor;
-
-@end
+//@interface BNRHypnosisView ()
+//
+//@property (strong, nonatomic) UIColor *circleColor;
+//
+//@end
 
 @implementation BNRHypnosisView
 
@@ -115,9 +115,11 @@
     CGContextSetShadow(currentContext, CGSizeMake(4, 7), 3);
     // Drawing the image on top (hopfully)
 //    [logoImage drawInRect:imageBounds];
-    CGContextRestoreGState(currentContext);
+    CGContextRestoreGState(currentContext);    
+    
 }
 
+// Probably need to comment this out so that the color doesn't randomly change on touch anymore
 // Overriding touchesBegan:withEvent: to change color of circle on touch
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -134,6 +136,25 @@
                                            alpha:1.0];
     
     self.circleColor = randomColor;
+}
+
+- (void)chooseCircleColor:(id)sender
+{
+    const char choice = [sender selectedSegmentIndex];
+    switch (choice) {
+        case 0:
+            self.circleColor = [UIColor redColor];
+            break;
+        case 1:
+            self.circleColor = [UIColor greenColor];
+            break;
+        case 2:
+            self.circleColor = [UIColor blueColor];
+            break;
+            
+        default:
+            break;
+    }
 }
 
 // Custom setter for circleColor for view updating

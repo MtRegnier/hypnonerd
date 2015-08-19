@@ -10,6 +10,8 @@
 
 @interface BNRHypnosisView : UIView
 
-//@property (nonatomic) CGRect frame;
+@property (strong, nonatomic) UIColor *circleColor;
 
+
+- (void)chooseCircleColor:(id)sender;
 @end

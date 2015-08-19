@@ -44,7 +44,23 @@
     // Always call the super implementation of viewDidLoad
     [super viewDidLoad];
     
+    // Setting up the segmented control
+    CGRect segContBounds = CGRectMake(75.0, 470.0, 225.0, 30.0);
+    NSArray *colorOptions = @[@"Red", @"Green", @"Blue"];
+    UISegmentedControl *colorPicker = [[UISegmentedControl alloc] initWithItems:colorOptions];
+    [colorPicker setFrame:segContBounds];
+
+    colorPicker.tintColor = [UIColor darkGrayColor];
+    
+    [colorPicker addTarget:self.view action:@selector(chooseCircleColor:) forControlEvents:UIControlEventValueChanged];
+    
+    [self.view addSubview:colorPicker];
+    
     NSLog(@"BNRHypnosisViewController loaded its view");
 }
+
+
+
+
 
 @end

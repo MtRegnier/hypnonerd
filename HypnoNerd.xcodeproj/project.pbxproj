@@ -101,16 +101,16 @@
 			isa = PBXGroup;
 			children = (
 				35B2D23D1B841944002F262D /* AppDelegate.h */,
-				35B2D2591B84196A002F262D /* BNRHypnosisView.h */,
 				35B2D25C1B841A67002F262D /* BNRHypnosisViewController.h */,
+				35B2D2591B84196A002F262D /* BNRHypnosisView.h */,
 				35B2D25F1B841EFD002F262D /* BNRReminderViewController.h */,
 				35B2D26F1B84E138002F262D /* BNRQuizViewController.h */,
 				35B2D2621B84CEAC002F262D /* BNRReminderViewController.xib */,
 				35B2D2711B84E138002F262D /* BNRQuizViewController.xib */,
 				35B2D2401B841944002F262D /* Images.xcassets */,
 				35B2D23E1B841944002F262D /* AppDelegate.m */,
-				35B2D25A1B84196A002F262D /* BNRHypnosisView.m */,
 				35B2D25D1B841A67002F262D /* BNRHypnosisViewController.m */,
+				35B2D25A1B84196A002F262D /* BNRHypnosisView.m */,
 				35B2D2601B841EFD002F262D /* BNRReminderViewController.m */,
 				35B2D2701B84E138002F262D /* BNRQuizViewController.m */,
 				35B2D2421B841944002F262D /* LaunchScreen.xib */,
