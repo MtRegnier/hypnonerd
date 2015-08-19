@@ -12,6 +12,7 @@
 		35B2D2411B841944002F262D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B2D2401B841944002F262D /* Images.xcassets */; };
 		35B2D2441B841944002F262D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35B2D2421B841944002F262D /* LaunchScreen.xib */; };
 		35B2D2501B841944002F262D /* HypnoNerdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B2D24F1B841944002F262D /* HypnoNerdTests.m */; };
+		35B2D25B1B84196A002F262D /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B2D25A1B84196A002F262D /* BNRHypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		35B2D2491B841944002F262D /* HypnoNerdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnoNerdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B2D24E1B841944002F262D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35B2D24F1B841944002F262D /* HypnoNerdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoNerdTests.m; sourceTree = "<group>"; };
+		35B2D2591B84196A002F262D /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
+		35B2D25A1B84196A002F262D /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 			children = (
 				35B2D23D1B841944002F262D /* AppDelegate.h */,
 				35B2D23E1B841944002F262D /* AppDelegate.m */,
+				35B2D2591B84196A002F262D /* BNRHypnosisView.h */,
+				35B2D25A1B84196A002F262D /* BNRHypnosisView.m */,
 				35B2D2401B841944002F262D /* Images.xcassets */,
 				35B2D2421B841944002F262D /* LaunchScreen.xib */,
 				35B2D2391B841944002F262D /* Supporting Files */,
@@ -212,6 +217,7 @@
 			files = (
 				35B2D23F1B841944002F262D /* AppDelegate.m in Sources */,
 				35B2D23C1B841944002F262D /* main.m in Sources */,
+				35B2D25B1B84196A002F262D /* BNRHypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
