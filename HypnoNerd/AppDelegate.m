@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "BNRHypnosisViewController.h"
 #import "BNRReminderViewController.h"
+#import "BNRQuizViewController.h"
 
 @interface AppDelegate ()
 
@@ -32,9 +33,11 @@
 //    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];
     BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
     
+    BNRQuizViewController *qvc = [[BNRQuizViewController alloc] init];
+    
     // Setting up the Tab Bar Controller
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[hvc, rvc];
+    tabBarController.viewControllers = @[hvc, rvc, qvc];
     
     
     // Changing root view controller. First to rvc, now to the tab bar
