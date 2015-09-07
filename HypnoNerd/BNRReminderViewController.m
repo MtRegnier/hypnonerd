@@ -55,7 +55,7 @@
     // Always call the super implementation of viewDidLoad
     [super viewDidLoad];
     
-    NSLog(@"BNRReminderViewController loaded its view");
+//    NSLog(@"BNRReminderViewController loaded its view");
 }
 
 // Overriding viewWillAppear to prevent users setting dates in the past

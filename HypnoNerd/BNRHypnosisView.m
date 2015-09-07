@@ -121,7 +121,7 @@
 // Overriding touchesBegan:withEvent: to change color of circle on touch
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"%@ was touched", self);
+//    NSLog(@"%@ was touched", self);
     
     // Generating random numbers for color codes
     float red = (arc4random() % 100)/100.0;
